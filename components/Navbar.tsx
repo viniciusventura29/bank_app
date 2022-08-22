@@ -8,7 +8,7 @@ export default function Navbar() {
 
     <header>
     <nav className="bg-white shadow dark:bg-gray-800">
-        <div className="container px-6 py-4 mx-auto">
+        <div className="px-0 lg:px-6 py-4 mx-0 lg:mx-auto">
             <div className="lg:flex lg:items-center lg:justify-between">
                 <div className="flex items-center justify-between">
                     <div className="text-xl font-semibold text-gray-700">
@@ -16,7 +16,7 @@ export default function Navbar() {
                     </div>
 
              
-                    <div className="flex md:hidden" onClick={() => setVisible(!visible)}>
+                    <div className="flex visible lg:hidden" onClick={() => setVisible(!visible)}>
                         <button type="button" className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
                                 <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
@@ -25,11 +25,11 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <div className={"-mx-4 lg:flex lg:items-center hidden lg:visible" + visible}>
-                    <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Pra você</a>
-                    <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Para seu negócio</a>
-                    <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Sobre nós</a>
-                    <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Dúvidas</a>
+                <div className={`w-full lg:h-16 lg:flex lg:items-center justify-end overflow-hidden lg:overflow-visible lg:visible transition-all duration-[500ms] ease-in ${visible ? 'h-52': "h-0"}`}>
+                    <a href="#" className="block lg:mx-4 py-4 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 lg:hover:bg-white hover:bg-gray-100">Pra você</a>
+                    <a href="#" className="block lg:mx-4 py-4 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 lg:hover:bg-white hover:bg-gray-100">Para seu negócio</a>
+                    <a href="#" className="block lg:mx-4 py-4 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 lg:hover:bg-white hover:bg-gray-100">Sobre nós</a>
+                    <a href="#" className="block lg:mx-4 py-4 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400 lg:hover:bg-white hover:bg-gray-100">Dúvidas</a>
                 </div>
             </div>
         </div>
