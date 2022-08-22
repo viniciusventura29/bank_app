@@ -1,9 +1,9 @@
 import { render } from "react-dom";
-import React from "react";
-
-
+import React, { useState } from "react";
 
 export default function Navbar() {
+    const [visible, setVisible] = useState(false);
+
   return (
 
     <header>
@@ -16,7 +16,7 @@ export default function Navbar() {
                     </div>
 
              
-                    <div className="flex lg:hidden">
+                    <div className="flex md:hidden" onClick={() => setVisible(!visible)}>
                         <button type="button" className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400" aria-label="toggle menu">
                             <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
                                 <path fill-rule="evenodd" d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"></path>
@@ -25,7 +25,7 @@ export default function Navbar() {
                     </div>
                 </div>
 
-                <div className="-mx-4 lg:flex lg:items-center">
+                <div className={"-mx-4 lg:flex lg:items-center hidden lg:visible" + visible}>
                     <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Pra você</a>
                     <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Para seu negócio</a>
                     <a href="#" className="block mx-4 mt-2 text-sm text-gray-700 capitalize lg:mt-0 dark:text-gray-200 hover:text-blue-600 dark:hover:text-blue-400">Sobre nós</a>

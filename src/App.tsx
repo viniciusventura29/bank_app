@@ -1,6 +1,7 @@
 import "../styles/App.css";
 import Navbar from "../components/Navbar";
-import imagee from "../img/Teste.jpg";
+import bgimg from "../img/Teste.jpg";
+import cardimg from "../img/teste2.svg";
 
 function App() {
   return (
@@ -11,7 +12,7 @@ function App() {
         <div
           className="flex items-center justify-center w-full h-full"
           style={{
-            backgroundImage: `url(${imagee})`,           
+            backgroundImage: `url(${bgimg})`,
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
             backgroundSize: "cover",
@@ -19,8 +20,7 @@ function App() {
         >
           <div className="text-center grid grid-cols-1 ">
             <h1 className="text-3xl font-semibold text-white uppercase lg:text-6xl ">
-              lançou lorem local{" "}
-              <span className="text-blue-400">passagem</span>
+              lançou lorem local <span className="text-blue-400">passagem</span>
             </h1>
             <span className="text-white px-8 pt-2">
               Lorem Ipsum é simplesmente uma simulação de texto da indústria
@@ -33,7 +33,41 @@ function App() {
           </div>
         </div>
       </div>
-      
+
+      <div className="w-full grid grid-cols-6 gap-6 mt-16 ">
+        <div className="bg-blue-600 col-start-2 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-200 col-start-3 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-600 col-start-4 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-200 col-start-5 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-200 col-start-2 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-600 col-start-3 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-200 col-start-4 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+        <div className="bg-blue-600 col-start-5 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
+          <img className="w-24" src="../img/teste2.svg" alt="sla" />
+          <p>O Lorem Ipsum é um texto modelo</p>
+        </div>
+      </div>
     </>
   );
 }
