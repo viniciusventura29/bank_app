@@ -1,5 +1,6 @@
 import "../styles/App.css";
 import Navbar from "../components/Navbar";
+import CardsHome from "../components/CardsHome";
 import bgimg from "../img/Teste.jpg";
 import cardimg from "../img/teste2.svg";
 
@@ -34,40 +35,7 @@ function App() {
         </div>
       </div>
 
-      <div className="w-full grid grid-cols-6 gap-6 mt-16 ">
-        <div className="bg-blue-600 col-start-2 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-200 col-start-3 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-600 col-start-4 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-200 col-start-5 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-200 col-start-2 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-600 col-start-3 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-200 col-start-4 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-        <div className="bg-blue-600 col-start-5 rounded-lg drop-shadow-2xl h-64 flex flex-col justify-evenly items-center px-4 text-white">
-          <img className="w-24" src="../img/teste2.svg" alt="sla" />
-          <p>O Lorem Ipsum é um texto modelo</p>
-        </div>
-      </div>
+      <CardsHome/>
     </>
   );
 }

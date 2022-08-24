@@ -8,11 +8,11 @@ export default function Navbar() {
 
     <header>
     <nav className="bg-white shadow dark:bg-gray-800">
-        <div className="px-0 lg:px-6 py-4 mx-0 lg:mx-auto">
+        <div className="px-2 lg:px-6 py-4 mx-0 lg:mx-auto">
             <div className="lg:flex lg:items-center lg:justify-between">
                 <div className="flex items-center justify-between">
-                    <div className="text-xl font-semibold text-gray-700">
-                        <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl hover:text-gray-700 dark:hover:text-gray-300" href="#">Brand</a>
+                    <div className="text-xl font-semibold text-gray-700 mb-4">
+                        <a className="text-2xl font-bold text-gray-800 dark:text-white lg:text-3xl  lg:mb-0 hover:text-gray-700 dark:hover:text-gray-300" href="#">Brand</a>
                     </div>
 
              
