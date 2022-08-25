@@ -39,3 +39,24 @@
 .read-the-docs {
   color: #888;
 }
+
+.navbar{
+  background-color: transparent;
+  position: fixed;
+  z-index: 999;
+  color: #fff;
+  display: flex;
+}
+
+.navbar.colorChange{
+  background-color: #fff;
+  color: black;
+}
+
+@media screen and (max-width:1025px) {
+  .navbar{
+    background-color: #fff;
+    color: black;
+  }
+  
+}
