@@ -18,7 +18,7 @@ export default function Navbar() {
   return (
     <header>
       <nav className={`transition-all duration-[500ms] ease-in ${colorChange ? 'navbar colorChange' : 'navbar'} `}>
-        <div className="px-2 w-full lg:px-6 py-4 mx-0 lg:mx-auto">
+        <div className="px-2 w-full lg:px-6 py-1 mx-0 lg:mx-auto">
           <div className="w-full lg:flex lg:items-center lg:justify-between">
             <div className="flex items-center justify-between">
               <div className="text-xl font-semibold">
@@ -50,7 +50,7 @@ export default function Navbar() {
             </div>
 
             <div
-              className={`w-full lg:h-16 lg:flex lg:items-center justify-end overflow-hidden lg:overflow-visible lg:visible ${visible ? "h-52 mt-4" : "h-0"}`}
+              className={`w-full lg:flex lg:items-center justify-end overflow-hidden lg:overflow-visible lg:visible ${visible ? "h-52 mt-4" : "h-0"}`}
             >
               <a
                 href="#"
