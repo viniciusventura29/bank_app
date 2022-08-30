@@ -15,12 +15,12 @@ function App() {
 
       <CardsHome />
 
-      <div className="flex w-5/6 m-auto mt-44 items-center justify-around">
+      <div className="flex flex-col lg:flex-row w-5/6 m-auto mt-44 items-center justify-around">
         <div>
-          <img src="../img/4636951.jpg" alt="" className="w-96" />
+          <img src="../img/4636951.jpg" alt="" className="w-52 lg:w-96" />
         </div>
 
-        <div className="text-justify w-3/6">
+        <div className="flex flex-col text-justify items-center w-5/6 lg:w-3/6 lg:flex-row">
           <h2 className="mb-6 font-bold text-3xl">Title</h2>
           <p>
             Lorem Ipsum é simplesmente uma simulação de texto da indústria
@@ -55,7 +55,6 @@ function App() {
             <SwiperSlide><img src="../img/bg2.jpg" alt="" /></SwiperSlide>
             <SwiperSlide><img src="../img/bg2.jpg" alt="" /></SwiperSlide>
 
-            ...
           </Swiper>
         </div>
 
