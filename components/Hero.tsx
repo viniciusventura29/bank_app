@@ -13,7 +13,7 @@ export default function Hero() {
           }}
         >
           <div className="flex flex-col w-[55rem] items-center lg:items-start text-center lg:ml-36 lg:text-left ">
-            <h1 className="text-3xl font-semibold text-white uppercase lg:text-6xl ">
+            <h1 className="text-3xl font-semibold text-white uppercase lg:text-7xl ">
               lançou lorem local <span className="text-blue-400 font-bold">passagem</span>
             </h1>
             <span className="text-white px-8 pt-2 text-sm mt-6 mb-6 lg:mb-16 lg:text-base lg:px-0">
