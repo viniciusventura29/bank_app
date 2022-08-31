@@ -5,6 +5,9 @@ import Footer from "../components/Footer";
 import Hero from "../components/Hero";
 import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper";
 
 function App() {
   return (
@@ -15,12 +18,12 @@ function App() {
 
       <CardsHome />
 
-      <div className="flex flex-col lg:flex-row w-5/6 m-auto mt-44 items-center justify-around">
+      <div className="flex flex-col-reverse lg:flex-row w-4/6 m-auto mt-44 items-center justify-between">
         <div>
           <img src="../img/4636951.jpg" alt="" className="w-52 lg:w-96" />
         </div>
 
-        <div className="flex flex-col text-justify items-center w-5/6 lg:w-3/6 lg:flex-row">
+        <div className="flex flex-col text-justify items-center w-5/6 lg:w-3/6 lg:items-start">
           <h2 className="mb-6 font-bold text-3xl">Title</h2>
           <p>
             Lorem Ipsum é simplesmente uma simulação de texto da indústria
@@ -37,12 +40,14 @@ function App() {
         </div>
       </div>
 
-      <div className="flex w-5/6 m-auto mt-44 items-center justify-around">
-        <div className="w-[50rem] overflow-hidden">
+      <div className="flex flex-col-reverse w-4/6 m-auto mt-44 items-center justify-between lg:flex-row-reverse">
+        <div className="lg:w-[40rem] md:ml-16 w-5/6 overflow-hidden rounded-[12px]">
           <Swiper
             centeredSlides={true}
+            navigation={true}
+            modules={[Navigation]}
             loop={true}
-            spaceBetween={50}
+            spaceBetween={20}
             slidesPerView={2}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
@@ -58,7 +63,7 @@ function App() {
           </Swiper>
         </div>
 
-        <div className="text-justify w-2/6">
+        <div className="flex flex-col text-justify items-center w-5/6 lg:w-[35rem] mb-16 lg:items-start lg:mb-0">
         <h2 className="mb-6 font-bold text-3xl">Title</h2>
           <p>
             Lorem Ipsum é simplesmente uma simulação de texto da indústria
