@@ -54,25 +54,25 @@ export default function Navbar() {
             >
               <a
                 href="#"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4"
+                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
               >
                 Pra você
               </a>
               <a
                 href="#"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4"
+                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
               >
                 Para seu negócio
               </a>
               <a
                 href="#"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4"
+                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
               >
                 Sobre nós
               </a>
               <a
                 href="#"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200  dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4"
+                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
               >
                 Dúvidas
               </a>
