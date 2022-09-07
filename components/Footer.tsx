@@ -2,7 +2,7 @@ export default function Footer() {
     return(
         
 <footer className="p-4 bg-white mt-16 rounded-t-lg shadow md:px-6 md:py-8 dark:bg-gray-900">
-    <div className="sm:flex sm:items-center sm:justify-between">
+    <div className="flex flex-col items-center justify-between lg:items-start lg:flex-row lg:justify-between">
         <a href="https://flowbite.com/" className="flex items-center mb-4 sm:mb-0">
             <img src="" className="mr-3 h-8" alt="My Bank Logo"></img>
             <span className="self-center text-2xl font-semibold whitespace-nowrap dark:text-white">Brand</span>

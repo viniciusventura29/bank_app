@@ -6,14 +6,14 @@ import { Navigation } from "swiper";
 
 export default function SwiperContent(){
     return(
-    <div className="flex flex-col-reverse w-4/6 m-auto mt-44 items-center justify-between lg:flex-row-reverse">
-        <div className="lg:w-[40rem] md:ml-16 w-5/6 overflow-hidden rounded-[12px]">
+    <div className="flex flex-col-reverse w-5/6 m-auto mt-44 items-center justify-between lg:flex-row-reverse">
+        <div className="lg:w-[50rem] md:ml-16 w-5/6 overflow-hidden rounded-[12px]">
           <Swiper
             centeredSlides={true}
             navigation={true}
             modules={[Navigation]}
             loop={true}
-            spaceBetween={20}
+            spaceBetween={10}
             slidesPerView={2}
             onSlideChange={() => console.log("slide change")}
             onSwiper={(swiper) => console.log(swiper)}
