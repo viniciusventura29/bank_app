@@ -24,7 +24,7 @@ export default function Navbar() {
               <div className="text-xl font-semibold">
                 <a
                   className="text-2xl font-bold dark:text-white lg:text-3xl lg:mb-0 hover:text-gray-700 dark:hover:text-gray-300"
-                  href="#"
+                  href="/"
                 >
                   Brand
                 </a>
@@ -65,7 +65,7 @@ export default function Navbar() {
                 Para seu negócio
               </a>
               <a
-                href="#"
+                href="/sobre"
                 className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
               >
                 Sobre nós
