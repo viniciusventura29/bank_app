@@ -4,7 +4,7 @@ export default function Hero() {
     return(
         <div className="w-full flex flex-col lg:flex-row lg:justify-between justify-center items-center h-screen lg:p-36">
           
-          <div className="flex flex-col w-9/12 items-center lg:items-start text-center lg:text-left ">
+          <div className="flex flex-col lg:w-5/12 w-11/12 items-center lg:items-start text-center lg:text-left ">
 
             <h1 className="text-3xl font-semibold text-gray-900 uppercase lg:text-6xl ">
               lançou lorem <span className="text-blue-400 font-bold">passagem</span>
@@ -19,7 +19,7 @@ export default function Hero() {
             </button>
             
           </div>
-          <div><img className="w-[40rem]" src={bgimg} alt="" /></div>
+          <img className="lg:w-5/12 w-6/12" src={bgimg} alt="" />
         </div>
     
     )

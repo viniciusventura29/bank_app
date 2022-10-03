@@ -9,6 +9,7 @@ import ContainersHome from "../../components/ContainersHome";
 export default function Home(){
     return(
         <>
+        <title>Home</title>
         <Navbar />
 
       <Hero />
