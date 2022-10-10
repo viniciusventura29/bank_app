@@ -9,13 +9,13 @@ return(
     <Navbar />
 
     <div className="z-10 h-[18rem] w-full flex items-end relative opacity-95 bg-gradient-to-r from-sky-400 to-blue-500">
-        <h1 className="z-20 text-9xl opacity-90 -m-3 font-bold text-white">SOBRE NÓS</h1>
+        <h1 className="z-20 text-7xl lg:text-9xl opacity-90 -m-3 font-bold text-white">SOBRE NÓS</h1>
     </div>
         {/*Cola a imagem ai cara <img alt="Img_sobre" /> */}
     <div className="mt-28 mb-20 flex items-center justify-center flex-col">
             <p className="text-xl">our mission</p>
             <h2 className="text-4xl font-bold ">Lorem ipsum</h2>
-            <p className="mt-8 w-3/6">e vem sendo utilizado desde o século
+            <p className="mt-8 w-4/6 lg:w-3/6 text-justify">e vem sendo utilizado desde o século
             XVI, quando um impressor desconhecido pegou uma bandeja de tipos e
             os embaralhou para fazer um livro de modelos de tipos Lorem Ipsum é simplesmente uma simulação de texto da indústria
             tipográfica e de impressos, e vem sendo utilizado desde o século
