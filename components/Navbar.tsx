@@ -17,68 +17,61 @@ export default function Navbar() {
 
   return (
     <header>
-      <nav className={`transition-all duration-[500ms] ease-in ${colorChange ? 'navbar colorChange' : 'navbar'} `}>
-        <div className="px-2 w-full lg:px-6 py-1 mx-0 lg:mx-auto">
-          <div className="w-full lg:flex lg:items-center lg:justify-between">
-            <div className="flex items-center justify-between">
+      <nav className={`w-full px-20 py-6 flex items-center justify-between transition-all duration-[500ms] ease-in ${colorChange ? 'navbar colorChange' : 'navbar'} `}>
               <div className="text-xl font-semibold">
                 <a
-                  className="text-2xl font-bold dark:text-white lg:text-3xl lg:mb-0 hover:text-gray-700 dark:hover:text-gray-300"
+                  className={`text-2xl transition-all duration-[300ms] font-bold text-white lg:text-3xl lg:mb-0 hover:text-gray-700 hover:text-blue-300 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
                   href="/"
                 >
                   Brand
                 </a>
               </div>
 
-              <div
-                className="flex visible lg:hidden"
-                onClick={() => setVisible(!visible)}
-              >
-                <button
-                  type="button"
-                  className="text-gray-500 dark:text-gray-200 hover:text-gray-600 dark:hover:text-gray-400 focus:outline-none focus:text-gray-600 dark:focus:text-gray-400"
-                  aria-label="toggle menu"
-                >
-                  <svg viewBox="0 0 24 24" className="w-6 h-6 fill-current">
-                    <path
-                      fill-rule="evenodd"
-                      d="M4 5h16a1 1 0 0 1 0 2H4a1 1 0 1 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2zm0 6h16a1 1 0 0 1 0 2H4a1 1 0 0 1 0-2z"
-                    ></path>
-                  </svg>
-                </button>
-              </div>
-            </div>
 
             <div
-              className={`w-full lg:flex lg:items-center justify-end overflow-hidden lg:overflow-visible lg:visible ${visible ? "h-52 mt-4" : "h-0"}`}
+              className={`gap-20 lg:flex lg:items-center overflow-hidden lg:overflow-visible lg:visible transition-all duration-[300ms] ${visible ? "h-52 mt-4" : "h-0"}`}
             >
+              <div className="flex gap-10">
               <a
                 href="#"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
+                className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
               >
                 Pra você
               </a>
               <a
                 href="#"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
+                className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0  lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
               >
                 Para seu negócio
               </a>
               <a
                 href="/sobre"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
+                className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"} `}
               >
                 Sobre nós
               </a>
               <a
                 href="/duvidas"
-                className="block lg:mx-4 py-4 text-sm capitalize lg:mt-0 dark:text-gray-200 lg:border-b-4 lg:border-transparent dark:hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-gray-200"
+                className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
               >
                 Dúvidas
               </a>
+              </div>
+              <div className="flex gap-4">
+              <a
+                href="/cadastro"
+                className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
+              >
+                Cadastro
+              </a>
+              <a
+                href="/login"
+                className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
+              >
+                Login
+              </a>
+              </div>
             </div>
-          </div>
-        </div>
       </nav>
     </header>
   );
