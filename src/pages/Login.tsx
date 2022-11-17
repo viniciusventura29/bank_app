@@ -11,6 +11,7 @@ export default function Login() {
   const [errorPassword,setErrorPassword] = useState(false)
   const [errorPasswordMessage, setErrorPasswordMessage] = useState(false)
   const [errorCpfMessage, setErrorCpfMessage] = useState(false)
+  const [successMessage, setSuccessMessage] = useState(false)
 
   function handleCpf(e:any){
     const notFormattedCpf = e.target.value
@@ -43,8 +44,9 @@ export default function Login() {
       setErrorPassword(false)
       setErrorPasswordMessage(false)
     }
-
-    navigate('/')
+    setSuccessMessage(true)
+    
+     navigate('/')
   }
 
   function callErrorCpfMessage(){
@@ -61,6 +63,15 @@ export default function Login() {
   }else{
     null
   }
+  }
+
+  function callSuccessMessage(){
+    if (successMessage===true){
+    return <div className="flex items-center gap-5 absolute border-r-[5px] border-green-500 px-20 py-6 bg-gray-100 bottom-10 right-10">Login Successfull <img className="w-10" src="information.png" /></div>
+    }
+    else{
+      null
+    }
   }
 
   return (
@@ -103,6 +114,7 @@ export default function Login() {
           </button>
         </div>
       </form>
+      {callSuccessMessage()}
       <a href="/cadastro">
         Não possui cadastro?{" "}
         <span className="hover:text-blue-500">Cadastrar!</span>
