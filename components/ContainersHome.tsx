@@ -1,12 +1,12 @@
 export default function ContainersHome(){
     return(
-        <div className="mt-52">
+        <div className="mt-52 text-steal-800">
 
         <div className="flex flex-col lg:flex-row bg-blue-300 w-full">
-          <div className="lg:w-[55rem] w-auto ">
+          <div className="lg:w-[45rem] w-auto ">
             <img src="../img/happywoman.jpg" alt="" className="" />
           </div>
-          <div className="lg:w-[40rem] w-auto text-center lg:text-end m-auto mr-20 ml-20">
+          <div className="lg:w-[40rem] w-auto text-center lg:text-end m-auto">
             <h2 className="text-2xl lg:mt-0 mt-6 mb-4 font-bold lg:text-3xl">Lorem Ipsum Loren </h2>
             <p className="lg:text-justify text-center mb-16 lg:mb-0">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -20,10 +20,10 @@ export default function ContainersHome(){
         </div>
 
         <div className="flex flex-col lg:flex-row-reverse bg-blue-400 w-full">
-          <div className="lg:w-[55rem] w-auto">
+          <div className="lg:w-[45rem] w-auto">
             <img src="../img/happywoman.jpg" alt="" className="" />
           </div>
-          <div className="lg:text-start text-center lg:w-[40rem] w-auto m-auto mr-20 ml-20">
+          <div className="lg:text-start text-center lg:w-[40rem] w-auto m-auto">
             <h2 className="mb-4 lg:mt-0 mt-6 font-bold text-2xl lg:text-3xl">Lorem Ipsum Loren </h2>
             <p className="lg:text-justify text-center mb-16 lg:mb-0">
               Lorem Ipsum is simply dummy text of the printing and typesetting
@@ -38,10 +38,10 @@ export default function ContainersHome(){
         </div>
 
         <div className="flex flex-col lg:flex-row bg-blue-300 w-full">
-          <div className="lg:w-[55rem] w-auto">
+          <div className="lg:w-[45rem] w-auto">
             <img src="../img/happywoman.jpg" alt="" className="" />
           </div>
-          <div className="lg:text-end text-center lg:w-[40rem] w-auto m-auto mr-20 ml-20">
+          <div className="lg:text-end text-center lg:w-[40rem] w-auto m-auto">
             <h2 className="mb-4 lg:mt-0 mt-6 font-bold text-2xl lg:text-3xl">Lorem Ipsum Loren </h2>
             <p className="lg:text-justify text-center mb-16 lg:mb-0">
               Lorem Ipsum is simply dummy text of the printing and typesetting
