@@ -5,6 +5,7 @@ import Sobre from "./pages/Sobre";
 import Duvidas from "./pages/Duvidas";
 import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
+import PraVoce from "./pages/PraVoce";
 
 function App() {
   return (
@@ -15,8 +16,9 @@ function App() {
           <Route index element={<Home />} />
           <Route path="sobre" element={<Sobre />} />
           <Route path="duvidas" element={<Duvidas />} />
-          <Route path="Login" element={<Login />} />
-          <Route path="Cadastro" element={<Cadastro />} />
+          <Route path="login" element={<Login />} />
+          <Route path="cadastro" element={<Cadastro />} />
+          <Route path='pravoce' element={<PraVoce />}/>
         </Route>
       </Routes>
     </BrowserRouter>
