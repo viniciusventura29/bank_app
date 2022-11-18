@@ -33,7 +33,7 @@ export default function Navbar() {
             >
               <div className="flex gap-10">
               <a
-                href="#"
+                href="/pravoce"
                 className={`pb-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${colorChange ? "text-gray-900" : "lg:text-gray-100 text-gray-800"}`}
               >
                 Pra você
