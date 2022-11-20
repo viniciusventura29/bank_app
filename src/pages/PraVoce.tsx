@@ -2,6 +2,7 @@ import Navbar from "../../components/Navbar";
 import CardsHome from "../../components/CardsHome";
 import Footer from "../../components/Footer";
 import Hero from "../../components/Hero";
+import { SimpleFormCard } from "react-pay-card";
 
 export default function PraVoce(){
 return(
@@ -12,6 +13,7 @@ return(
     </div>
     <div>
         <h1>Pra Você</h1>
+        <SimpleFormCard />
     </div>
 
     <Footer />
