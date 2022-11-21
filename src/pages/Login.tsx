@@ -1,5 +1,3 @@
-import Navbar from "../../components/Navbar";
-import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react'
 
@@ -75,7 +73,7 @@ export default function Login() {
   }
 
   return (
-    <div className="h-screen justify-center flex flex-col">
+    <div className="h-screen justify-center flex flex-col bg-blue-100">
       <form className="flex flex-col w-1/4 p-10 mx-auto" action="">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mb-2">Login</h2>
@@ -87,7 +85,7 @@ export default function Login() {
           <label htmlFor="CPF mb-4">Cpf do usuário</label>
           <input
             placeholder="555.555.555-55"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorCpf ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorCpf ? 'border-2 border-red-500': 'border-none'}`}
             type="text"
             name="CPF"
             id="CPF"
@@ -98,7 +96,7 @@ export default function Login() {
           <label className="mt-6" htmlFor="Senha">Senha</label>
           <input
             placeholder="************"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorPassword ? 'border-2 border-red-500': 'border-0'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorPassword ? 'border-2 border-red-500': 'border-0'}`}
             type="password"
             name="Senha"
             id="password"
