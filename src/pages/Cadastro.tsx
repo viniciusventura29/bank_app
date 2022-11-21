@@ -142,7 +142,7 @@ export default function Cadastro() {
   }
 
   return (
-    <div className="h-screen justify-center flex flex-col">
+    <div className="h-screen justify-center flex flex-col bg-blue-100">
       <form className="flex flex-col w-1/4 p-10 mx-auto" action="">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mb-2">Cadastro</h2>
@@ -154,7 +154,7 @@ export default function Cadastro() {
         <label htmlFor="CPF mb-4">Nome completo</label>
           <input
             placeholder="Fulano Gomes da Silva"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorNome ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorNome ? 'border-2 border-red-500': 'border-none'}`}
             type="text"
             name="Nome"
             id="Nome"
@@ -167,7 +167,7 @@ export default function Cadastro() {
            <label htmlFor="CPF mb-4">Idade</label>
           <input
             placeholder="17"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorIdade ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorIdade ? 'border-2 border-red-500': 'border-none'}`}
             type="number"
             name="Idade"
             id="Idade"    
@@ -180,7 +180,7 @@ export default function Cadastro() {
            <label htmlFor="CPF">Gênero</label>
           <input
             placeholder="/"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorGenero ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorGenero ? 'border-2 border-red-500': 'border-none'}`}
             type="text"
             name="Genero"
             id="Genero"
@@ -191,7 +191,7 @@ export default function Cadastro() {
            <label className="mt-4" htmlFor="CPF">Endereço</label>
           <input
             placeholder="Rua LogoAli, Bairro São Pedro, Número 512, Campinas/SP"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorEndereco ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorEndereco ? 'border-2 border-red-500': 'border-none'}`}
             type="text"
             name="Address"
             id="Address"
@@ -202,7 +202,7 @@ export default function Cadastro() {
           <label className="mt-4" htmlFor="CPF">Cpf do usuário</label>
           <input
             placeholder="555.555.555-55"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorCpf ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorCpf ? 'border-2 border-red-500': 'border-none'}`}
             type="text"
             name="CPF"
             id="CPF"
@@ -213,7 +213,7 @@ export default function Cadastro() {
           <label className="mt-4" htmlFor="Senha">Senha</label>
           <input
             placeholder="************"
-            className={`w-full p-2 bg-gray-200 focus:outline-none ring-0 ${errorPassword ? 'border-2 border-red-500': 'border-0'}`}
+            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorPassword ? 'border-2 border-red-500': 'border-0'}`}
             type="password"
             name="Senha"
             id="password"
