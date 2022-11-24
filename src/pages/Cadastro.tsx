@@ -20,7 +20,6 @@ export default function Cadastro() {
   const [errorPasswordMessage, setErrorPasswordMessage] = useState(false)
   const [errorNomeMessage, setErrorNomeMessage] = useState(false)
   const [errorIdadeMessage, setErrorIdadeMessage] = useState(false)
-  const [errorGeneroMessage, setErrorGeneroMessage] = useState(false)
   const [errorEnderecoMessage, setErrorEnderecoMessage] = useState(false)
   const [errorCpfMessage, setErrorCpfMessage] = useState(false)
   const [successMessage, setSuccessMessage] = useState(false)
@@ -89,12 +88,13 @@ export default function Cadastro() {
     }
 
     setSuccessMessage(true)
-    navigate('/login')
+    
   }
 
   function callSuccessMessage(){
     if (successMessage===true){
-    return <div className="flex items-center gap-5 absolute border-r-[5px] border-green-500 px-20 py-6 bg-gray-100 bottom-10 right-10">Register Successfull <img className="w-10" src="information.png" /></div>
+      timer()
+    return <div className="flex items-center gap-5 absolute border-r-[5px] border-green-500 px-20 py-6 bg-gray-100 bottom-10 right-10">Register Successfull <img className="w-10" src="img/check.png" /></div>
     }
     else{
       null
@@ -139,6 +139,12 @@ export default function Cadastro() {
   }else{
     null
   }
+  }
+
+  function timer(){
+    setTimeout(()=>{
+      setSuccessMessage(false)
+    },5000)
   }
 
   return (

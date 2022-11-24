@@ -1,5 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react'
+import axios from "axios";
 
 export default function Login() {
   const navigate = useNavigate()
@@ -44,7 +45,7 @@ export default function Login() {
     }
     setSuccessMessage(true)
     
-     navigate('/')
+     doLogin()
   }
 
   function callErrorCpfMessage(){
@@ -65,11 +66,31 @@ export default function Login() {
 
   function callSuccessMessage(){
     if (successMessage===true){
-    return <div className="flex items-center gap-5 absolute border-r-[5px] border-green-500 px-20 py-6 bg-gray-100 bottom-10 right-10">Login Successfull <img className="w-10" src="information.png" /></div>
+    timer()
+    return <div className="flex items-center gap-5 absolute border-r-[5px] border-green-500 px-20 py-6 bg-gray-100 bottom-10 right-10">Login Successfull <img className="w-10" src="img/check.png" /></div>
     }
     else{
       null
     }
+  }
+
+  function doLogin(){
+    axios({
+      url: "http://127.0.0.1:8000/auth/users/",
+      method: 'GET',
+      headers: {
+        'Access-Control-Allow-Origin' : '*',
+      },
+    }).then(res =>{
+      console.log(res)
+      console.log(res.data)
+    })
+  }
+
+  function timer(){
+    setTimeout(()=>{
+      setSuccessMessage(false)
+    },5000)
   }
 
   return (
