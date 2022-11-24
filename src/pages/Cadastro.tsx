@@ -37,7 +37,19 @@ export default function Cadastro() {
 
   function cadastroValidation(){ 
 
+    const regex = /[0-9]/;
+
     if (nome.length <1){
+      setErrorNome(true)
+      setErrorNomeMessage(true)
+      return
+    }
+    else{
+      setErrorNome(false)
+      setErrorNomeMessage(false)
+    }
+
+    if (regex.test(nome)){
       setErrorNome(true)
       setErrorNomeMessage(true)
       return
@@ -111,7 +123,7 @@ export default function Cadastro() {
 
   function callErrorNomeMessage(){
     if (errorNomeMessage === true){
-    return <div className="text-red-500">This input cannot be blank, try again.</div>
+    return <div className="text-red-500">This input is wrong, try again.</div>
   }else{
     null
   }
