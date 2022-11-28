@@ -165,7 +165,7 @@ export default function Cadastro() {
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mb-2">Cadastro</h2>
           <p className="mb-14 text-gray-500">
-            Digite seu CPF e sua senha para logar!
+            Digite os campos necessários para concluir cadastrar!
           </p>
         </div>
         <div className="flex flex-col items-start">
@@ -182,11 +182,10 @@ export default function Cadastro() {
           {callErrorNomeMessage()}
           <div className="flex gap-2 mt-4">
             <div className="flex flex-col items-start">
-           <label htmlFor="CPF mb-4">Idade</label>
+           <label htmlFor="CPF mb-4">Data de Nascimento</label>
           <input
-            placeholder="17"
             className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorIdade ? 'border-2 border-red-500': 'border-none'}`}
-            type="number"
+            type="date"
             name="Idade"
             id="Idade"    
             value={idade}
@@ -239,8 +238,8 @@ export default function Cadastro() {
           />
           {callErrorPasswordMessage()}
           <div className="mt-6">
-            <input className="mb-10 mr-2" type="checkbox" name="" />
-            Lembre de mim
+            <input id="check" className="mb-10 mr-2" type="checkbox" name="" />
+            <label htmlFor="check">Lembre de mim</label>
           </div>
           <button type="button" onClick={cadastroValidation} className="w-full py-2 bg-blue-500 rounded text-white">
             Logar
