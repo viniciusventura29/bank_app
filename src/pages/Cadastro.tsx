@@ -161,7 +161,7 @@ export default function Cadastro() {
 
   return (
     <div className="h-screen justify-center flex flex-col bg-blue-100">
-      <form className="flex flex-col w-1/4 p-10 mx-auto" action="">
+      <form className="flex flex-col lg:w-1/4 p-10 mx-auto" action="">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mb-2">Cadastro</h2>
           <p className="mb-14 text-gray-500">
@@ -184,7 +184,7 @@ export default function Cadastro() {
             <div className="flex flex-col items-start">
            <label htmlFor="CPF mb-4">Data de Nascimento</label>
           <input
-            className={`w-full p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorIdade ? 'border-2 border-red-500': 'border-none'}`}
+            className={`w-48 p-2 bg-blue-50 focus:outline-none ring-0 rounded ${errorIdade ? 'border-2 border-red-500': 'border-none'}`}
             type="date"
             name="Idade"
             id="Idade"    

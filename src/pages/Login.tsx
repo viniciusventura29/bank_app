@@ -100,7 +100,7 @@ export default function Login() {
 
   return (
     <div className="h-screen justify-center flex flex-col bg-blue-100">
-      <form className="flex flex-col w-1/4 p-10 mx-auto" action="">
+      <form className="flex flex-col lg:w-1/4 p-10 mx-auto" action="">
         <div className="flex flex-col">
           <h2 className="text-2xl font-semibold mb-2">Login</h2>
           <p className="mb-14 text-gray-500">
@@ -129,9 +129,9 @@ export default function Login() {
             onChange={e => setPassword(e.target.value) }
           />
           {callErrorPasswordMessage()}
-          <div className="mt-6">
-            <input className="mb-10 mr-2" type="checkbox" name="" />
-            Lembre de mim
+          <div className="mt-6 mb-10 gap-4">
+            <input id="check" type="checkbox" name="" />
+            <label htmlFor="check">Lembre de mim</label>
           </div>
           <button type="button" onClick={loginValidation} className="w-full py-2 bg-blue-500 rounded text-white">
             Logar
