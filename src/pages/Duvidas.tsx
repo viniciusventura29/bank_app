@@ -1,6 +1,13 @@
 import Navbar from "../../components/Navbar"
 import Footer from "../../components/Footer"
-import {Accordion, AccordionItem} from 'react-sanfona';
+import {
+    Accordion,
+    AccordionItem,
+    AccordionItemHeading,
+    AccordionItemButton,
+    AccordionItemPanel,
+  } from 'react-accessible-accordion';
+  
 
 export default function Duvidas(){
     return(
@@ -15,32 +22,37 @@ export default function Duvidas(){
                 <h2 className="text-4xl font-bold ">Lorem ipsum</h2>
 
                 <div>
-                    <Accordion className="mt-16 w-80 lg:w-[60rem]">
-                        <AccordionItem className="text-start bg-blue-500 text-white w-12/12 py-4 px-4 mb-4" title='Como Aldus PageMaker.'>
-                        <p className="mt-4 text-justify p-4 bg-blue-400">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>                             
-                        </AccordionItem>    
-
-                        <AccordionItem className="text-start bg-blue-500 text-white w-12/12 py-4 px-4 mb-4" title='softwares de editoração eletrônica como'>
-                        <p className="mt-4 text-justify p-4 bg-blue-400">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>                                
-                        </AccordionItem>    
-
-                        <AccordionItem className="text-start bg-blue-500 text-white w-12/12 py-4 px-4 mb-4" title='Se popularizou na década de'>
-                            <p className="mt-4 text-justify p-4 bg-blue-400 ">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>                
-                        </AccordionItem>      
-
-                        <AccordionItem className="text-start bg-blue-500 text-white w-12/12 py-4 px-4 mb-4" title='Lorem Ipsum'>
-                        <p className="mt-4 text-justify p-4 bg-blue-400 ">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>                               
-                        </AccordionItem>           
-
-                        <AccordionItem className="text-start bg-blue-500 text-white w-12/12 py-4 px-4 mb-4" title='Como Aldus PageMaker.'>
-                        <p className="mt-4 text-justify p-4 bg-blue-400 ">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>                
-                        </AccordionItem>
-
-                        <AccordionItem className="text-start bg-blue-500 text-white w-12/12 py-4 px-4 mb-4" title='Eletrônica, permanecendo'>
-                        <p className="mt-4 text-justify p-4 bg-blue-400 ">Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação de texto da indústria tipográfica e de impressos, e vem sendo utilizado desde o século XVI, quando um impressor desconhecido pegou uma bandeja de tipos e os embaralhou para fazer um livro de modelos de tipos. Lorem Ipsum sobreviveu não só a cinco séculos, como também ao salto para a editoração eletrônica, permanecendo essencialmente inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.</p>                
-                        </AccordionItem>
-                        
-                    </Accordion>
+                <Accordion className="w-[60rem]">
+            <AccordionItem className="bg-gray-100">
+                <AccordionItemHeading className="bg-gray-200 p-4">
+                    <AccordionItemButton className="bg-gray-200 w-full flex">
+                        What harsh truths do you prefer to ignore?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="p-5">
+                    <p className="flex text-start">
+                        Exercitation in fugiat est ut ad ea cupidatat ut in
+                        cupidatat occaecat ut occaecat consequat est minim minim
+                        esse tempor laborum consequat esse adipisicing eu
+                        reprehenderit enim.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+            <AccordionItem className="bg-gray-100">
+                <AccordionItemHeading className="bg-gray-200 p-4">
+                    <AccordionItemButton className="bg-gray-200 w-full flex">
+                        Is free will real or just an illusion?
+                    </AccordionItemButton>
+                </AccordionItemHeading>
+                <AccordionItemPanel className="p-5">
+                    <p className="flex text-start">
+                        In ad velit in ex nostrud dolore cupidatat consectetur
+                        ea in ut nostrud velit in irure cillum tempor laboris
+                        sed adipisicing eu esse duis nulla non.
+                    </p>
+                </AccordionItemPanel>
+            </AccordionItem>
+        </Accordion>
                 </div>
             </div>
             <div className="bg-cover bg-center py-40 px-0 lg:px-20 " style={{backgroundImage:"URL(../../img/mulher-Duvidas.jpg)"}}>

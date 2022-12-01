@@ -1,9 +1,11 @@
 import { render } from "react-dom";
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
+import { Auth } from '../auth/auth'
 
 export default function Navbar() {
   const [visible, setVisible] = useState(false);
 
+  console.log(Auth())
 
   const [colorChange, setColorchange] = useState(false);
   const changeNavbarColor = () => {
