@@ -75,21 +75,23 @@ export default function Login() {
   }
 
   function doLogin(){
-    axios.post("http://127.0.0.1:8000/auth/jwt/create/",{
-      username:cpf,
+    console.log(cpf.replaceAll('.', '').replace('-', ''))
+    axios.post("http://127.0.0.1:8000/auth/jwt/new/",{
+      cpf:cpf.replaceAll('.', '').replace('-', ''),
       password:password
     }).then((res)=>{
       localStorage.setItem('token',res.data.access)
-    })
-    axios.get("http://127.0.0.1:8000/auth/users/",{
-      headers:{
-        'Authorization': localStorage.getItem('token')
-      }
-    })
-    .then((res)=>{
-      console.log(res)
-      console.log(res.data)
-    })
+      console.log(localStorage.getItem('token'))
+      axios.get("http://127.0.0.1:8000/auth/users/me/",{
+        headers:{
+          'Authorization': 'JWT ' + localStorage.getItem('token')
+        }
+      })
+      .then((res)=>{
+        console.log(res)
+        console.log(res.data)
+      })
+      })
     }
 
   function timer(){
