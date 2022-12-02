@@ -67,7 +67,7 @@ export default function Login() {
 
   function callSuccessMessage() {
     if (successMessage === true) {
-      timer();
+      timerNotify();
       return (
         <div className="flex items-center gap-5 absolute border-r-[5px] border-green-500 px-20 py-6 bg-gray-100 bottom-10 right-10">
           Login Successfull <img className="w-10" src="img/check.png" />
@@ -77,10 +77,7 @@ export default function Login() {
       null;
     }
   }
-  interface Dados {
-    cpf: string;
-    senha: string;
-  }
+
   function doLogin() {
     axios
       .post("http://127.0.0.1:8000/auth/jwt/new/", {
@@ -89,19 +86,21 @@ export default function Login() {
       })
       .then((res) => {
         localStorage.setItem("token", res.data.access);
-        axios.get("http://127.0.0.1:8000/auth/users/me/", {
-          headers: {
-            Authorization: "JWT " + localStorage.getItem("token"),
-          },
-        });
         navigate('/')
+        timerJwt()
       });
   }
 
-  function timer() {
+  function timerNotify() {
     setTimeout(() => {
       setSuccessMessage(false);
     }, 5000);
+  }
+
+ function timerJwt(){
+    setTimeout(() => {
+      localStorage.removeItem("token")
+    }, 3600000);
   }
 
   return (
