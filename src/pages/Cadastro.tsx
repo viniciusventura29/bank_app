@@ -2,12 +2,14 @@ import Navbar from "../../components/Navbar";
 import Footer from "../../components/Footer";
 import { useNavigate } from "react-router-dom";
 import { useState } from 'react'
+import axios from "axios";
 
 export default function Cadastro() {
   const navigate = useNavigate()
   const [cpf, setCpf] = useState('')
   const [password,setPassword] = useState('')
   const [nome,setNome] = useState('')
+  const [sobrenome,setSobrenome] = useState('')
   const [idade,setIdade] = useState('')
   const [endereco,setEndereco] = useState('')
   const [genero,setGenero] = useState('')
@@ -59,15 +61,15 @@ export default function Cadastro() {
       setErrorNomeMessage(false)
     }
 
-    if (idade.length > 3 || idade.length <1){
-      setErrorIdade(true)
-      setErrorIdadeMessage(true)
-      return
-    }
-    else{
-      setErrorIdade(false)
-      setErrorIdadeMessage(false)
-    }
+    // if (idade.length > 3 || idade.length <1){
+    //   setErrorIdade(true)
+    //   setErrorIdadeMessage(true)
+    //   return
+    // }
+    // else{
+    //   setErrorIdade(false)
+    //   setErrorIdadeMessage(false)
+    // }
 
     if (endereco.length <1){
       setErrorEndereco(true)
@@ -100,7 +102,29 @@ export default function Cadastro() {
     }
 
     setSuccessMessage(true)
+    register()
     
+  }
+
+  function splitName(){
+    setSobrenome(nome.split(' ')[1])
+    setNome(nome.split(' ')[0])
+  }
+
+  function register(){
+    axios.post('http://127.0.0.1:8000/auth/users/',{
+      cpf:cpf.replaceAll('.', '').replace('-', ''),
+      password:password,
+      email:'vni@123.com'
+    })
+    splitName()
+    axios.post('http://127.0.0.1:8000/bank/ClienteInsertImage/',{
+      nome:nome,
+      sobrenome:sobrenome,
+      nasc:idade,
+      Genero:'Genero masculino',
+      user:cpf.replaceAll('.', '').replace('-', '')
+    }).then(()=>{navigate("/login")})
   }
 
   function callSuccessMessage(){
