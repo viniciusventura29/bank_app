@@ -112,19 +112,16 @@ export default function Cadastro() {
   }
 
   function register(){
+    splitName()
     axios.post('http://127.0.0.1:8000/auth/users/',{
       cpf:cpf.replaceAll('.', '').replace('-', ''),
       password:password,
-      email:'vni@123.com'
-    })
-    splitName()
-    axios.post('http://127.0.0.1:8000/bank/ClienteInsertImage/',{
+      email:'vni@123.com',
       nome:nome,
       sobrenome:sobrenome,
       nasc:idade,
-      Genero:'Genero masculino',
-      user:cpf.replaceAll('.', '').replace('-', '')
-    }).then(()=>{navigate("/login")})
+      genero:'Genero masculino',
+    })
   }
 
   function callSuccessMessage(){
