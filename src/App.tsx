@@ -6,6 +6,7 @@ import Duvidas from "./pages/Duvidas";
 import Login from './pages/Login'
 import Cadastro from './pages/Cadastro'
 import PraVoce from "./pages/PraVoce";
+import MeuPerfil from "./pages/MeuPerfil";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
           <Route path="login" element={<Login />} />
           <Route path="cadastro" element={<Cadastro />} />
           <Route path='pravoce' element={<PraVoce />}/>
+          <Route path='meuperfil' element={<MeuPerfil />}/>
         </Route>
       </Routes>
     </BrowserRouter>

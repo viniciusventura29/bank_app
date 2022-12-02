@@ -163,7 +163,7 @@ export default function Navbar() {
             </div>
             <div className="flex gap-4">
               <a
-                href="/cadastro"
+                href="/meuperfil"
                 className={`py-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${
                   colorChange
                     ? "text-gray-900"
@@ -174,7 +174,7 @@ export default function Navbar() {
               </a>
               <a
                 onClick={logout}
-                href="/login"
+                href="/"
                 className={`py-2 transition-all duration-[500ms] font-semibold text-[18px] text-sm capitalize lg:mt-0 lg:border-b-4 lg:border-transparent hover:text-blue-400 hover:border-l-4 lg:hover:border-l-0 lg:hover:border-b-4 lg:hover:border-blue-400 ${
                   colorChange
                     ? "text-gray-900"

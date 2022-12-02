@@ -4,23 +4,30 @@ import bgimg from "../img/front-view-of-people-having-a-meeting-in-the-office.jp
 
 export default function Hero() {
   const [welcomeText,setWelcomeText] = useState('')
+  const [userInfo, setUserInfo] = useState('')
+  const [buttonText, setButtonText] = useState('')
+  const [link, setLink]= useState('')
 
   useEffect(()=>{
+    axios.get("http://127.0.0.1:8000/auth/users/me/", {
+      headers: {
+        Authorization: "JWT " + localStorage.getItem("token"),
+      },
+    }).then((res)=>{
+      setUserInfo(res.data)
+    });
     let token = localStorage.getItem("token");
     if (token === null) {
       setWelcomeText('Lorem Ipsum é simplesmente uma simulação inalterado. Se popularizou na década de 60, quando a Letraset lançou decalques contendo passagens de Lorem Ipsum, e mais recentemente quando passou a ser integrado a softwares de editoração eletrônica como Aldus PageMaker.Lorem Ipsum é simplesmente uma simulação')
+      setLink('/cadastro')
+      setButtonText("Join us")
     }
     else{
-      axios.get("http://127.0.0.1:8000/auth/users/me/", {
-          headers: {
-            Authorization: "JWT " + localStorage.getItem("token"),
-          },
-        }).then((res)=>{
-          console.log(res.data)
-        });
-      setWelcomeText("Olá ")
+      setWelcomeText("Olá "+userInfo.nome + ", como você está?" )
+      setLink('/perfil')
+      setButtonText("Meu perfil")
     }
-  }) 
+  },[]) 
 
   
     return(
@@ -36,8 +43,8 @@ export default function Hero() {
               {welcomeText} 
             </span>
 
-            <a href="/cadastro" className="justify-self-center justify-center flex px-4 py-2 lg:mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-36 hover:bg-blue-500 focus:outline-none focus:bg-blue-500 " title="Start project">
-              Join Us
+            <a href={link} className="justify-self-center justify-center flex px-4 py-2 lg:mt-4 text-sm font-medium text-white uppercase transition-colors duration-200 transform bg-blue-600 rounded-md lg:w-36 hover:bg-blue-500 focus:outline-none focus:bg-blue-500 " title="Start project">
+              {buttonText}
             </a>
             
           </div>
